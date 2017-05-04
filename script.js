@@ -10,7 +10,7 @@ onYouTubeIframeAPIReady = function () {
     player = new YT.Player('player', {
         height: '244',
         width: '434',
-        videoId: 'AkyQgpqRyBY',  // youtube video id
+        videoId: 'pHRvWH2bLQk',  // youtube video id
         playerVars: {
             'autoplay': 0,
             'rel': 0,
@@ -24,11 +24,11 @@ onYouTubeIframeAPIReady = function () {
 
 onPlayerStateChange = function (event) {
     if (event.data == YT.PlayerState.ENDED) {
-        $('.start-video').fadeIn('normal');
+        $('.play-btn').fadeIn('normal');
     }
 }
 
-$(document).on('click', '.start-video', function () {
+$(document).on('click', '.play-btn', function () {
     $(this).fadeOut('normal');
     player.playVideo();
 });
@@ -39,15 +39,15 @@ function endLoad() {
   document.getElementById('loading').style.zIndex=-1;
 }
 
-function playVid() {
-  var vid = document.getElementById('promo');
-  document.getElementById('play-btn').style.opacity=0;
-  vid.play();
-  function resetVideo() {
-    // resets the video element by resetting the source
-    this.src = this.src
-    document.getElementById('play-btn').style.opacity=1;
-}
+// function playVid() {
+//   var vid = document.getElementById('promo');
+//   document.getElementById('play-btn').style.opacity=0;
+//   vid.play();
+//   function resetVideo() {
+//     // resets the video element by resetting the source
+//     this.src = this.src
+//     document.getElementById('play-btn').style.opacity=1;
+// }
 
   vid.addEventListener("ended", resetVideo, false);
 }

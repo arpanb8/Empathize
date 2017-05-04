@@ -13,8 +13,8 @@ function endLoad() {
 //     document.getElementById('play-btn').style.opacity=1;
 // }
 
-  vid.addEventListener("ended", resetVideo, false);
-}
+//   vid.addEventListener("ended", resetVideo, false);
+// }
 
 function down(event) {
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Empathize</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title">
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+  <script src="easing.js" charset="utf-8"></script>
+  <script src="wow.js" charset="utf-8"></script>
+  <script src="typed.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="animate.css" media="screen" title="no title">
+  <script type="text/javascript">
+              new WOW().init();
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=889763404407830";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <center>
+    <div class="loading" id="loading">
+      <br>
+      <div class="spinner"></div>
+    </div>
+    <div class="first">
+      <div class="logo wow animated fadeInDown">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <br>
+      <h1 class="wow animated fadeInDown">Hola, I'm <span>Empathize</span></h1>
+      <p class="tagline wow animated fadeIn">An online therapist chatbot!</p>
+      <br>
+      <!-- <button id="msg-button" name="msg-button" onclick="initChat()"> <i class="fa fa-comments" aria-hidden="true"></i> Explore</button> -->
+      <div class="d-arr wow animated fadeIn" onclick="down(event)">
+        <a href="#second" id="d-link"><img src="down.png" alt="down" /></a>
+      </div>
+    </div>
+    <!-- <div class="chat-window" id="chat-window">
+     <div class="top">
+       <img src="chatbot.png" alt="chatbot" />
+       <h1>Empathize</h1>
+     </div>
+     <div class="chat">
+       <div class="chat-msg">
+         <div class="user-msg">
+           <p class="msg">Hey!</p>
+         </div>
+       </div>
+     </div>
+    </div> -->
+    <div class="second" id="second">
+      <!-- <video>
+        <source height="200" src="vid.mp4" type="video/mp4">
+          <br>
+      </video> -->
+      <img src="play.png" onclick="playVid()" class="play-btn" id="play-btn" alt="play" />
+      <video id="promo" src="vid.mp4"></video>
+
+    </div>
+    <div class="third"><br><br>
+      <h1 class="wow animated fadeInDown">What is Empathize?</h1>
+      <br>
+      <p class="wow animated fadeInUp">Empathize is an artificially intelligent chatbot that is emotionally aware and can Empathize with people. It will provide an outlet for people to vent out their everyday problems and communicate with our compassionate bot.
+Our founder Arpan has personally reached out to dozens of troubled teens - most of whom he met on LGBTQ groups on Facebook - and stopped them from doing irreversible harm. With a huge success rate and a ton of motivation from his friends, he is humbled by his experiences.
+In the short term, our goal is to offer a platform for everybody to let out how they feel and get emotional support.
+In the long term, however, we seek to improve the way mental health problems are perceived and approached in our society.</p>
+<br>
+<div class="fb-like" data-href="https://www.facebook.com/EmpathizeIN/" data-width="100" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+    </div>
+    <footer>
+      <p class="wow animated fadeInDown">Made with <span style="color:#e74c3c;">&hearts;</span> in India</p>
+    </footer>
+  </center>
+</body>
+</html>
